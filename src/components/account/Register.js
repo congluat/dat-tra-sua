@@ -1,23 +1,23 @@
 /**
- * Created by congl on 7/23/2017.
+ * Created by congl on 7/24/2017.
  */
 import React,{Component} from 'react';
 import {Grid, Row, Form, FormGroup, Col, FormControl, Button, ControlLabel} from 'react-bootstrap';
 import AccountCss from './Account.css';
 import { LinkContainer } from 'react-router-bootstrap';
 
-class Account extends Component{
+class Register extends Component{
     constructor(props){
         super(props);
         //document.title = this.props.title;
-        document.title = "Tài khoản";
+        document.title = "Đăng ký";
     };
 
     render(){
         return(
             <Grid>
                 <Row>
-                    <h1 className="title">Hi Luat</h1>
+                    <h1 className="title">Đăng ký</h1>
                 </Row>
                 <Row>
                     <Form horizontal>
@@ -51,10 +51,14 @@ class Account extends Component{
                             </Col>
                         </FormGroup>
                         <FormGroup>
-
-                            <Col smOffset={5} sm={6}>
+                            <Col smOffset={4} sm={2}>
+                                <Button>
+                                    Quên mật khẩu
+                                </Button>
+                            </Col>
+                            <Col sm={6}>
                                 <Button bsStyle="primary login-button" type="submit">
-                                    Cập nhật
+                                    Đăng ký
                                 </Button>
                             </Col>
                         </FormGroup>
@@ -65,4 +69,4 @@ class Account extends Component{
     };
 };
 
-export {Account};
+export {Register};
